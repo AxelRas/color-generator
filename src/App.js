@@ -10,6 +10,7 @@ class App extends Component {
     }
 
     this.submit = this.submit.bind(this);
+    this.createScale = this.createScale.bind(this);
   }
 
   componentDidMount() {
@@ -18,6 +19,10 @@ class App extends Component {
 
   componentDidUpdate() {
     $('#submit-btn').css("background-color", this.state.color);
+  }
+
+  createScale() {
+    return;
   }
 
   submit() {
